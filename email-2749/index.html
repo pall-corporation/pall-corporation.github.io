@@ -29,6 +29,7 @@
 table, td {
 	border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;
 }
+
         .appleTime a {color: #1e3f84 !important; text-decoration: none !important;}
         .appleLinksPurple a {color: #30437e !important; text-decoration: none;} 
         .appleLinksWhite a {color: #ffffff !important; text-decoration: none;} 
@@ -36,6 +37,8 @@ table, td {
         .appleLinksGrey a {color: #333333 !important; text-decoration: none;}
         .appleLinksLightBlue a {color: #009cdd !important; text-decoration: none;}
 		.noUnderline a { text-decoration: none !important; }
+		.appleDarkBlue a {color: #1d407b !important; text-decoration:none !important}
+		.appleDarkGrey a {color: #666666 !important; text-decoration: none !important;}
         #outlook a {
             padding: 0;
         }
@@ -81,6 +84,10 @@ table, td {
             /* MOBILE CODE */
             .hideBreak {
 				display:none !important;
+			}
+			
+			.minWidth {
+				min-width:320px !Important;
 			}
 			
 		}
@@ -149,7 +156,7 @@ table, td {
 			
 			.adjustHeading {
 				font-size:22px !important;
-				line-height:24px !important;
+				line-height:23px !important;
 			}
 			.paddingChange {
 				padding-left:14px !important; 
@@ -158,10 +165,59 @@ table, td {
 
         }
         @media only screen and (max-width: 440px) {
+			.logoAdjust {
+				width:130px !important;
+				height:auto !important;
+			}
+			
+			.paddLogo {
+				padding-bottom:10px !important; 
+				padding-top:15px !important;
+			}
+			.smallFont {
+				font-size:13px !important;
+			}
+			.paddingChange {
+				padding-left:13px !important;
+			}
+			
+			.bgAdjust {
+				background-image: url(https://pall-corporation.github.io/email-2749/img/header-bg.jpg) !important;
+    background-size: contain !important;
+	background-repeat: no-repeat;
+	height:209px !important;
+	background-color:#FFF !important;
+			}
+			
             .gifSmaller {
                 width: 330px;
             }
+			.adjustHeading {
+				font-size:25px !important;
+				line-height:26px !important;
+			}
         }
+		
+		 @media only screen and (max-width: 404px) {
+			 .adjustHeading {
+				font-size:17px !important; 
+				line-height:18px !important;
+			 }
+			 .paddLogo {
+				 padding-bottom:10px !important;
+			 }
+			 .paddingChange  {
+				 padding-left:10px !important;
+			 }
+			 .bgAdjust {
+				 height:190px !important;
+			 }
+		 }
+		
+		
+		
+		
+		
         @media only screen and (max-width: 365px) {
 			
 			.btnResize {
@@ -180,7 +236,36 @@ table, td {
             .textCenter {
                 text-align: center;
             }
+			.bgAdjust {
+				height:178px !important;
+			}
+			.smallFont {
+				font-size:11px !important;
+				padding-top:0px !important;
+				line-height:11px !important;
+			}
+			.paddLogo {
+				padding-top:12px !important;
+			}
         }
+		
+		
+		@media only screen and (max-width: 340px) {
+			.bgAdjust {
+				height:165px !important;
+			}
+			
+			body {
+				min-width:320px !important;
+			}
+			.smallFont {
+				font-size:11px !important;
+				padding-top:0px !important;
+			}
+			.paddLogo {
+				padding-top:12px !important;
+			}
+		}
     </style>
         <style type="text/css">
         /* Some resets and issue fixes */
@@ -227,7 +312,9 @@ table, td {
             text-decoration: none !important;
         }
         /* End Resets */
-        
+        }
+		
+		
         @media only screen and (min-width: 416px) and (max-width: 490px) {
             .btn-resize {
                 font-size: 20px !Important;
@@ -382,7 +469,7 @@ table, td {
 
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
-        <tr>
+  <tr>
             <td align="center">
 
 
@@ -401,7 +488,7 @@ table, td {
                     <tr>
                         
                         
-          <td background="https://pall-corporation.github.io/email-2749/img/header-bg.jpg" bgcolor="#eaf4f3" width="600" height="284" valign="top">
+          <td class="bgAdjust" background="https://pall-corporation.github.io/email-2749/img/header-bg.jpg" bgcolor="#eaf4f3" width="600" height="284" valign="top">
   <!--[if gte mso 9]>
   <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:284px">
     <v:fill type="tile" src="https://pall-corporation.github.io/email-2749/img/header-bg.jpg" color="#eaf4f3" />
@@ -410,10 +497,10 @@ table, td {
   <div>    
                         
                         
-           <table cellpadding="0" cellspacing="0" border="0" class="fullWidth">
+           <table cellpadding="0" cellspacing="0" border="0" class="fullWidth minWidth" style="min-width:600px;">
                                 <tr>
                                     <td width="20">&nbsp;</td>
-                                    <td width="580" style="padding-bottom:30px; padding-top:20px;" align="left"><img alt="Pall Life Science" src="https://pall-corporation.github.io/email-2749/img/logo.jpg" style="display:block; width:185px; height: 34px;" /></td>
+                                    <td class="paddLogo" width="580" style="padding-bottom:30px; padding-top:20px;" align="left"><img class="logoAdjust" alt="Pall Life Science" src="https://pall-corporation.github.io/email-2749/img/logo.jpg" style="display:block; width:185px; height: 34px;" /></td>
                                 </tr>
                                 <tr>
                                     <td width="20">&nbsp;</td>
@@ -433,7 +520,7 @@ table, td {
                                 </tr>
                                 <tr>
                                   <td width="20">&nbsp;</td>
-                                  <td class="paddingChange" width="580" style="font-family: Arial, sans-serif; font-size: 14px; color: #5aa0af; mso-line-height-rule: exactly; font-weight:bold; padding-left:17px; padding-top:5px;" align="left">
+                                  <td class="paddingChange smallFont" width="580" style="font-family: Arial, sans-serif; font-size: 14px; color: #5aa0af; mso-line-height-rule: exactly; font-weight:bold; padding-left:17px; padding-top:5px; line-height:14px;" align="left">
                                      
                         Pall Life Sciences
                                     
@@ -495,7 +582,7 @@ table, td {
                                 
                                 </tr>
                                 <tr>
-                                	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; padding-top:2px; mso-line-height-rule: exactly; color: #1d407b; font-weight:bold;">at the ISCT Annual Meeting, London, UK, <span style="text-decoration:none !important;" class="noUnderline">May 03-06 2017</span></td>
+                                	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; padding-top:2px; mso-line-height-rule: exactly; color: #1d407b; font-weight:bold;">at the ISCT Annual Meeting, London, UK, <span style="text-decoration:none !important;" class="appleDarkBlue">May 03-06 2017</span></td>
                                     
                                 
                                 </tr>
@@ -506,7 +593,7 @@ table, td {
                                 </tr>
                                 <tr>
                                 	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; padding-top:20px; mso-line-height-rule: exactly; color: #1d407b; font-weight:bold;">Product Theatre Presentation:<br />
-<span style="color:#666666; font-size:14px;">May 4: 13.00-13.30</span>
+<span class="appleDarkGrey" style="color:#666666; font-size:14px;">May 4: 13.00-13.30</span>
 </td>
                                     
                                 
@@ -573,7 +660,7 @@ We have developed a manufacturing platform that enables reproducible expansion o
                                       <span style="color: #1d407b; font-size:18px;"> Scientific Poster Presentation:</span><br />
                                         
                                         
-                                        <span style="color: #666666; font-size:14px; line-height:17px;">May 4: 17:00-18:30<br />
+                                        <span class="appleDarkGrey" style="color: #666666; font-size:14px; line-height:17px;">May 4: 17:00-18:30<br />
                                         Early Stage Professionals (ESP) Session 1 – Advanced Strategic Innovations for Cell&amp; Gene Therapies</span>
                                         
                                         
@@ -630,7 +717,7 @@ We have developed a manufacturing platform that enables reproducible expansion o
                                       <span style="color: #1d407b; font-size:18px;"> Presentation:</span><br />
                                         
                                         
-                                        <span style="color: #666666; font-size:14px;">    May 5: 15.30-17.00<br />
+                                        <span class="appleDarkGrey" style="color: #666666; font-size:14px;">    May 5: 15.30-17.00<br />
                                         Poster session # 1 – Exhibit Hall
 </span>
                    
@@ -677,7 +764,7 @@ We have developed a manufacturing platform that enables reproducible expansion o
     <center style="color:#ffffff;font-family:sans-serif;font-size:18px;font-weight:bold;">TO REGISTER CLICK HERE</center>
   </v:rect>
 <![endif]--><a href="https://biopharmaceuticals.pall.com/en/events/2017-isct.html"
-style="background-color:#2b4b81;background-image:url(https://pall-corporation.github.io/email-2749/img/bt-bg.jpg);color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:35px;text-align:center;text-decoration:none;width:310px;-webkit-text-size-adjust:none;mso-hide:all; border-radius:5px;">TO REGISTER CLICK HERE</a></div>
+style="background-color:#2b4b81;background-image:url(https://pall-corporation.github.io/email-2749/img/bt-bg.jpg);color:#ffffff;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:34px;text-align:center;text-decoration:none;width:310px;-webkit-text-size-adjust:none;mso-hide:all; border-radius:5px;">TO REGISTER CLICK HERE</a></div>
                                     
                                     
                                     </td>
