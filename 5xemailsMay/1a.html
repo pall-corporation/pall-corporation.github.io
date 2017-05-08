@@ -9,6 +9,14 @@
     <style type="text/css">
         /* Some resets and issue fixes */
 		
+		.bgAdjust {
+   
+    background-repeat: no-repeat;
+  
+			
+		}
+		
+		
 		@font-face {
     font-family: "customFont";
     src: url(font/HelveticaNeueLTPro-Bd.ttf);
@@ -57,10 +65,27 @@
 				display:none !Important;
 			}
 			
+			.bgAdjust {
+    background-image: url(https://pall-corporation.github.io/5xemailsMay/img/bg-text.jpg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    height: 361px !important;
+			
 		}
+		
+		.headingText {
+			font-size:40px !important;
+			line-height:42px !important;
+			padding-top:180px !important;
+		}
+		
+		
+		
         @media only screen and (max-width: 520px) {
             /* MOBILE CODE */
-         
+         .btnWidth {
+			 width: 335px !important;
+		 }
             .btn-resize {
                 width: 100% !important;
             }
@@ -91,6 +116,21 @@
                 padding-left: 0px !important;
             }
         }
+		
+		 @media only screen and (max-width: 475px) {
+			 .bgAdjust {
+
+    height: 322px !important;
+			
+		}
+		
+		.headingText {
+			font-size:32px !important;
+			line-height:34px !important;
+			padding-top:160px !important;
+		}
+			 
+		 }
         @media only screen and (max-width: 415px) {
             .btn-resize {
                 font-size: 14px !important;
@@ -113,6 +153,10 @@
             .gifSmaller {
                 width: 330px;
             }
+			
+			.bgAdjust {
+  
+    height: 298px !important;
         }
         @media only screen and (max-width: 365px) {
 			.reduceWidth {
@@ -305,7 +349,7 @@
                                                 </td>
                                             </tr>-->
                                             <tr>
-                                                <td align="right"><img width="175" style="display:block;" src="img/logo.jpg" />
+                                                <td align="right"><img width="175" style="display:block;" src="https://pall-corporation.github.io/5xemailsMay/img/logo.jpg" />
                                                 </td>
                                             </tr>
                                         </table>
@@ -322,10 +366,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td background="img/bg-text.jpg" bgcolor="#7cb4e1" width="600" height="406" valign="top" align="center">
+                        <td class="bgAdjust" background="https://pall-corporation.github.io/5xemailsMay/img/bg-text.jpg" bgcolor="#fbfbfb" width="600" height="406" valign="top" align="center">
   <!--[if gte mso 9]>
   <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:406px;">
-    <v:fill type="tile" src="https://i.imgur.com/YJOX1PC.png" color="#7cb4e1" />
+    <v:fill type="tile" src="https://pall-corporation.github.io/5xemailsMay/img/bg-text.jpg" color="#fbfbfb" />
     <v:textbox inset="0,0,0,0">
   <![endif]-->
   <div>
@@ -333,8 +377,8 @@
   <table>
   
   	<tr>
-    <td align="center" style="font-family:headerFont, Arial, Helvetica, sans-serif; font-size: 47px; color: #FFFFFF; padding-top: 215px; line-height:47px;  ">
-    Need to bring clarity to<br />
+    <td class="headingText" align="center" style="font-family:headerFont, Arial, Helvetica, sans-serif; font-size: 47px; color: #FFFFFF; padding-top: 215px; line-height:47px;  ">
+    Need to bring clarity to
 your mAbs process</td>
     </tr>
   </table>
@@ -354,7 +398,7 @@ your mAbs process</td>
                             <table cellpadding="0" cellspacing="0" border="0" class="fullWidth">
                                 <tr>
                                     <td width="25">&nbsp;</td>
-                                    <td bgcolor="#fbfbfb" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; padding-top:15px; mso-line-height-rule: exactly; line-height: 20px; color: #009cdd;"><b>Discover how with Pall Life Sciences' 
+                                    <td bgcolor="#fbfbfb" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; padding-top:15px; mso-line-height-rule: exactly; line-height: 27px; color: #009cdd;"><b>Discover how with Pall Life Sciences' 
                            </b>
                                     </td>
                                     <td width="25">&nbsp;</td>
@@ -388,7 +432,7 @@ your mAbs process</td>
                                
                                <tr>
                                     <td width="25">&nbsp;</td>
-                                    <td align="center" style="padding-top: 20px; font-family:'customFont-light', Arial, Helvetica, sans-serif; font-size: 17px; mso-line-height-rule: exactly; line-height: 20px; color: #333333; padding-bottom:8px;">
+                                    <td align="center" style="padding-top: 20px; font-family:'customFont-light', Arial, Helvetica, sans-serif; font-size: 17px; mso-line-height-rule: exactly; line-height: 20px; color: #333333; padding-bottom:25px;">
  
 <span style="font-family:customFont, Arial, Helvetica, sans-serif; font-size:18px"> 
  You are invited to our free webinar introducing our CMM HyperCel™ cation exchange mixed-mode sorbent. </span><br /><br/>
@@ -404,7 +448,7 @@ Join our webinar to learn how CMM HyperCel™ versatile sorbent can help you suc
 
                                 <tr>
                                     <td width="25">&nbsp;</td>
-                                    <td align="center">
+                                    <td align="center" style="padding-bottom:25px;">
                                     
                                    		<table cellpadding="0" cellspacing="0" border="0">
                                         	<tr>
@@ -413,12 +457,12 @@ Join our webinar to learn how CMM HyperCel™ versatile sorbent can help you suc
                                                 
                                                 <div><!--[if mso]>
   <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:45px;v-text-anchor:middle;width:435px;" arcsize="9%" stroke="f" fill="t">
-    <v:fill type="tile" src="https://i.imgur.com/0xPEf.gif" color="#9311a4" />
+    <v:fill type="tile" src="https://pall-corporation.github.io/5xemailsMay/img/bg-bground-pink.jpg" color="#9311a4" />
     <w:anchorlock/>
     <center style="color:#ffffff;font-family:sans-serif;font-size:20px;font-weight:bold;">Register For FREE Webiner Now</center>
   </v:roundrect>
 <![endif]--><a href="http://"
-style="background-color:#9311a4;background-image:url(https://i.imgur.com/0xPEf.gif);border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:20px;font-weight:bold;line-height:45px;text-align:center;text-decoration:none;width:435px;-webkit-text-size-adjust:none;mso-hide:all;">Register For FREE Webiner Now</a></div>
+style="background-color:#9311a4;background-image:url(https://pall-corporation.github.io/5xemailsMay/img/bg-bground-pink.jpg);border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:20px;font-weight:bold;line-height:43px;text-align:center;text-decoration:none;width:435px;-webkit-text-size-adjust:none;mso-hide:all;padding-top:2px;" class="btnWidth">Register For FREE Webiner Now</a></div>
                                                 
                                                 </td>
                                             </tr>
@@ -446,10 +490,10 @@ style="background-color:#9311a4;background-image:url(https://i.imgur.com/0xPEf.g
                                 
                                    <tr>
                                     <td width="25">&nbsp;</td>
-                                    <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; mso-line-height-rule: exactly; color:;">
-
-
-         Any Questions?
+                                    <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; color: #333333; padding-top:15px; padding-bottom:10px;">
+                                  
+<b>
+         Any Questions?</b>
 
                                     </td>
                                     <td width="25">&nbsp;</td>
@@ -469,12 +513,12 @@ style="background-color:#9311a4;background-image:url(https://i.imgur.com/0xPEf.g
                                             
                                             <div><!--[if mso]>
   <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:45px;v-text-anchor:middle;width:295px;" arcsize="9%" stroke="f" fill="t">
-    <v:fill type="tile" src="https://i.imgur.com/0xPEf.gif" color="#0f6eb1" />
+    <v:fill type="tile" src="https://pall-corporation.github.io/5xemailsMay/img/blue-button-bg.jpg" color="#0f6eb1" />
     <w:anchorlock/>
     <center style="color:#ffffff;font-family:sans-serif;font-size:17px;font-weight:bold;">Ask a Pall Expert Now</center>
   </v:roundrect>
 <![endif]--><a href="http://"
-style="background-color:#0f6eb1;background-image:url(https://i.imgur.com/0xPEf.gif);border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:17px;font-weight:bold;line-height:45px;text-align:center;text-decoration:none;width:295px;-webkit-text-size-adjust:none;mso-hide:all;">Ask a Pall Expert Now</a></div>
+style="background-color:#0f6eb1;background-image:url(https://pall-corporation.github.io/5xemailsMay/img/blue-button-bg.jpg);border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:17px;font-weight:bold;line-height:43px;text-align:center;text-decoration:none;width:295px;-webkit-text-size-adjust:none;mso-hide:all;">Ask a Pall Expert Now</a></div>
                                             
                                             </td>
                                         </tr>
@@ -564,7 +608,7 @@ style="background-color:#0f6eb1;background-image:url(https://i.imgur.com/0xPEf.g
                     
 
                     <tr>
-                        <td align="center" style="font-weight:bold; padding-top:25px; padding-bottom:25px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; mso-line-height-rule: exactly; line-height: 23px; color: #009cdd;">
+                        <td align="center" style="font-weight:bold;  padding-bottom:25px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; mso-line-height-rule: exactly; line-height: 23px; color: #009cdd;">
                            Continuously <span style="color: #203a7f;">Improving</span> Bioprocesses</td>
                     </tr>
 
@@ -598,7 +642,7 @@ style="background-color:#0f6eb1;background-image:url(https://i.imgur.com/0xPEf.g
                                                                     
                                                                     
                                                                     
-                                                                    <table>
+                                                                    <table class="fullWidth">
                                                                     
                                                                     
                                                                       <tr>
@@ -627,7 +671,7 @@ style="background-color:#0f6eb1;background-image:url(https://i.imgur.com/0xPEf.g
                                                                   </tr>
                                                                     
                                                                     <tr>
-                                                                    	<td align="right" style=" font-weight:bold; font-family: Arial, Helvetica, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 12px; color: #fff;padding-bottom:10px; padding-top:9px; padding-right:5px;">
+                                                                    	<td align="center" style=" font-weight:bold; font-family: Arial, Helvetica, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 12px; color: #fff;padding-bottom:10px; padding-top:9px; padding-right:5px;">
                                                         <a href="#" style="text-decoration:none; color:#ffffff;"> <i>  Subscribe to our mailing list</i>
                                                         </a></td>                                                                    
                                                                     </tr>
